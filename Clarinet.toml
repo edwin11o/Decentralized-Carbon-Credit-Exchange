@@ -1,10 +1,11 @@
-
 [project]
-name = "."
-authors = []
+name = "decentralized-carbon-credit-exchange"
+authors = ["edwin11o"]
 telemetry = true
+
 [repl.analysis]
 passes = ["check_checker"]
+
 [repl.analysis.check_checker]
 # If true, inputs are trusted after tx_sender has been checked.
 trusted_sender = false
@@ -15,6 +16,6 @@ trusted_caller = false
 # caller.
 callee_filter = false
 
-# [contracts.counter]
-# path = "contracts/counter.clar"
-# depends_on = []
+[contracts.carbon-credit-exchange]
+path = "contracts/carbon-credit-exchange.clar"
+depends_on = []
